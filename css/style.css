@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+
+    background: linear-gradient(red , yellow);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+#board{
+    background: linear-gradient(black, white);
+    width: 90vmin;
+    height: 90vmin;
+    border: 5px solid black;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+.head{
+    background-color: blue;
+    border-radius: 5px;
+    transform: scale(1.2);
+}
+.snake{
+    background-color: greenyellow;
+    border: .25vmin solid white;
+    border-radius: 10px;
+}
+
+.food{
+    background: linear-gradient(greenyellow,red);
+    border-radius: 10px;
+
+}
